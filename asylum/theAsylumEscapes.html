@@ -18,11 +18,19 @@ tw-story[tags~="bg2"] {
   background-image:url("https://wallpapercave.com/uwp/uwp1696671.gif");
 	background-repeat: no-repeat;
 	background-size: cover;
-	}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="615,53" size="200,200">your name is harry potter. you wake up in an asylum room, not remembering anything
-
-(after:2s)[you notice ginny weasly]
-(after:4s)[what will you do?]
-(after:6s)[ [[talk to ginny]]   or   [[think of a plan to escape]]]
+	}
+tw-story[tags~="bg3"] {
+  background-image:url("https://64.media.tumblr.com/608a1deb6f9acc492c4fd82973bad884/31af58c429edaed8-0b/s540x810/a010eb3423b4c08da003b46e1866a878ea55de8c.gifv");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+  width: 100%;
+    margin-left: auto;
+  margin-right: auto;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="613,48" size="200,200">Your name is harry potter. You wake up in an asylum room, not remembering anything.
+(after:2s)[(t8n:&quot;dissolve&quot;)[You notice ginny weasly.](stop:)]
+(after:4s)[(t8n:&quot;dissolve&quot;)[What will you do?](stop:)]
+(after:6s)[(t8n:&quot;dissolve&quot;)[ [[talk to ginny]]   or   [[think of a plan to escape]]](stop:)]
 
 (set: $wand to false)
 (set: $deluminator to false)
@@ -38,12 +46,12 @@ You: go back to the room and [[think of a plan to escape]] or [[run with ginny]]
 
 what will you do?
 
-[[fight him toghether]] or [[keep running]]</tw-passagedata><tw-passagedata pid="5" name="talk to ginny" tags="" position="481,224" size="100,100">you and ginny talk to each other. you two get along. 
-you and ginny think of a plan to escape
+[[fight him toghether]] or [[keep running]]</tw-passagedata><tw-passagedata pid="5" name="talk to ginny" tags="" position="481,224" size="100,100">
 
-(if:$wand is false)[you need your wand to use spells. so you go find your wand]
+(if:$wand is false)[(after:2s)[(t8n:&quot;dissolve&quot;)[You and ginny talk to each other. you two get along. 
+You and ginny think of a plan to escapeyou need your wand to use spells. so you go find your wand. &quot;[[go find your wand|think of a plan to escape]]&quot;](stop:)]]
 
-(if:$wand is true)[you pick up your wand and you think of which spell to use
+(if:$wand is true)[(after:2s)[(t8n:&quot;dissolve&quot;)[you pick up your wand and you think of which spell to use]
 
 you use: [[alohomora]] / [[bombarda]]
 &lt;div class=&quot;row&quot;&gt;
@@ -55,19 +63,21 @@ you use: [[alohomora]] / [[bombarda]]
 &lt;img src=&quot;https://c.tenor.com/sx6rUhrAM1sAAAAC/alohomora-wand.gif&quot;, align=&quot;left&quot;&gt;
 =|=
 &lt;img src=&quot;https://y.yarn.co/05ecfa69-9d07-4bb0-b978-0b1ed4bdb7b2_text.gif&quot;, align=&quot;right&quot;&gt;
-|==|]
+|==|(stop:)]]
 </tw-passagedata><tw-passagedata pid="6" name="alohomora" tags="" position="340,354" size="100,100">you unlock the door quietly
 
-[[you hear footsteps coming your way]]
+(after:2s)[(t8n:&quot;dissolve&quot;)[ [[you hear footsteps coming your way]]](stop:)]
 
 </tw-passagedata><tw-passagedata pid="7" name="bombarda" tags="" position="530,372" size="100,100">the door explodes and lord farquaad notices and chops your head off
 
-&lt;img src=&quot;https://i.pinimg.com/originals/9f/e3/44/9fe34415866354cc0b13d8a852ed7c86.gif&quot;&gt;</tw-passagedata><tw-passagedata pid="8" name="hole under the bed" tags="" position="643,433" size="100,100">[[move bed]](if:$wand is true)[/[[lift bed]]]</tw-passagedata><tw-passagedata pid="9" name="window" tags="" position="821,503" size="100,100">the window is locked.
+&lt;img src=&quot;https://i.pinimg.com/originals/9f/e3/44/9fe34415866354cc0b13d8a852ed7c86.gif&quot;&gt;</tw-passagedata><tw-passagedata pid="8" name="hole under the bed" tags="" position="643,433" size="100,100">[[move bed]](if:$wand is true)[/[[lift bed]]]</tw-passagedata><tw-passagedata pid="9" name="window" tags="" position="824,497" size="100,100">the window is locked.
 
 [[find a way to open it]]    
 
-use [[hole under the bed]] </tw-passagedata><tw-passagedata pid="10" name="move bed" tags="" position="617,612" size="100,100">the bed makes a big sound and lord farquaad kills you.
-&lt;img src=&quot;https://25.media.tumblr.com/6db10706549c38cb33c546d9bc8c7b43/tumblr_meoasa8VoZ1rcn3vwo1_500.gif&quot;&gt;</tw-passagedata><tw-passagedata pid="11" name="find a way to open it" tags="" position="997,549" size="100,100">[[serch in the drawer]] or [[search in the cabinet]]</tw-passagedata><tw-passagedata pid="12" name="serch in the drawer" tags="" position="862,692" size="100,100">you found a deluminator!
+use [[hole under the bed]] 
+
+[[try and break it]]</tw-passagedata><tw-passagedata pid="10" name="move bed" tags="" position="617,612" size="100,100">the bed makes a big sound and lord farquaad kills you.
+&lt;img src=&quot;https://25.media.tumblr.com/6db10706549c38cb33c546d9bc8c7b43/tumblr_meoasa8VoZ1rcn3vwo1_500.gif&quot;&gt;</tw-passagedata><tw-passagedata pid="11" name="find a way to open it" tags="" position="997,549" size="100,100">[[search in the drawer]] or [[search in the cabinet]]</tw-passagedata><tw-passagedata pid="12" name="search in the drawer" tags="" position="862,692" size="100,100">you found a deluminator!
 
 deluminator: can absorb light and store it. when you click the button, the room you are standing in will light up as long as the deluminator has light
 
@@ -85,8 +95,8 @@ do you absoarb the light in the room? [[yes|yes light]] [[no|no light]]
 or
 [[go back to the bed|hole under the bed]]</tw-passagedata><tw-passagedata pid="14" name="lift bed" tags="" position="748,625" size="100,100">you lift the bed quietly using the spell //wingardium leviosa// and you see a tunnel to the [[sewers]]
 
-</tw-passagedata><tw-passagedata pid="15" name="escape" tags="bg1" position="701,1115" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="fight him toghether" tags="" position="369,819" size="100,100">you and ginny are 
-</tw-passagedata><tw-passagedata pid="17" name="sewers" tags="" position="743,789" size="100,100">the sewers are very dark.(if:$light is true)[you click the button fo your deluminator and the sewer lightens up! you continue along the sewer. you find an exit that leads to a [[dim forest]]. 
+</tw-passagedata><tw-passagedata pid="15" name="escape" tags="bg1" position="701,1115" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="fight him toghether" tags="" position="369,819" size="100,100">you and ginny decide that he is (text-style:&quot;shudder&quot;)[SUS] and decide to fight him.
+(after:2s)[(t8n:&quot;dissolve&quot;)[you win with numbers and you [[continue along the path]](stop:)]]</tw-passagedata><tw-passagedata pid="17" name="sewers" tags="" position="743,814" size="100,100">the sewers are very dark.(if:$light is true)[you click the button fo your deluminator and the sewer lightens up! you continue along the sewer. you find an exit that leads to a [[dim forest]]. 
 &lt;head&gt;&lt;style&gt;
 tw-story {
   background-image:url(&quot;https://wallpapercave.com/uwp/uwp1696671.gif&quot;);
@@ -101,9 +111,14 @@ quick! check the [[other cabinet!|search in the cabinet]]
 (set: $light to true)
 
 (after:4s)[(goto:&quot;too late&quot;)]</tw-passagedata><tw-passagedata pid="19" name="no light" tags="" position="1089,821" size="100,100">you do not absorb the light becuase you think lord farquaad might notice 
-you search in the other [[cabinet|search in the cabinet]]</tw-passagedata><tw-passagedata pid="20" name="keep running" tags="" position="594,814" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="dim forest" tags="" position="732,952" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="game over" tags="" position="477,1030" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="23" name="too late" tags="" position="949.5,1062" size="100,100">OH NO YOU&#39;RE TOO LATE!
+you search in the other [[cabinet|search in the cabinet]]</tw-passagedata><tw-passagedata pid="20" name="keep running" tags="" position="594,814" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="dim forest" tags="" position="740,990" size="100,100">You&#39;re walking across the forest. (after:2s)[Have you really escaped?]
+(after:4s)[.](after:5s)[.](after:6s)[.](after:7s)[.](after:8s)[.]
 
-(after:2s)[(goto:&quot;game over&quot;)]</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="22" name="game over" tags="bg3" position="477,1030" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="too late" tags="" position="991,1034" size="100,100">OH NO YOU&#39;RE TOO LATE!
+
+(after:2s)[(goto:&quot;game over&quot;)]</tw-passagedata><tw-passagedata pid="24" name="try and break it" tags="" position="1045,668" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="25" name="continue along the path" tags="" position="369,969" size="100,100">you are relieved that you decided to fight snape. [(after:2s)[(t8n:&quot;dissolve&quot;)[ you could&#39;ve gotten backstabbed](stop:)]
+[(t8n:&quot;dissolve&quot;)[ you see two ways to go](stop:)]
+[(t8n:&quot;dissolve&quot;)[ [[left]] or [[right]]](stop:)]</tw-passagedata><tw-passagedata pid="26" name="left" tags="" position="294,1119" size="100,100">the room is dark and you see a little light ahead.</tw-passagedata><tw-passagedata pid="27" name="right" tags="" position="444,1150" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
